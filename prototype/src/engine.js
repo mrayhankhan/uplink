@@ -168,8 +168,18 @@
   const NEED=[[/whats\s*app|व्हाट्स/i,'whatsapp'],[/cctv|camera|कैमरा/i,'cctv'],[/\bpos\b|billing|बिलिंग|invoice/i,'pos'],[/website|site banani|वेबसाइट/i,'website'],[/e-?mail|ईमेल/i,'email'],[/cloud backup|data backup|बैकअप/i,'backup'],[/antivirus|ransomware|virus/i,'antivirus'],[/firewall|फ़ायरवॉल/i,'firewall'],[/guest wi-?fi|customer wi-?fi|\bwi-?fi\b|वाई-?फाई/i,'wifi'],[/fleet|gps|vehicle|delivery bike|गाड़ी/i,'fleet'],[/machine|iot|sensor|मशीन/i,'iot'],[/toll.?free|1800|टोल/i,'tollfree'],[/ivr|call recording|cloud telephony|sip\b/i,'ivr'],[/\bsms\b/i,'sms'],[/static ip|fixed ip/i,'staticip'],[/failover|backup internet|backup line/i,'failover'],[/sd-?wan|central(ly)? manage/i,'sdwan'],[/leased line.*100|100.*leased line|\bill 100\b/i,'leased100'],[/leased line|dedicated (line|internet)|लीज्ड/i,'leased'],[/\b1\s?g(bps)?\b|gigabit/i,'gigabit']];
   const CITY_SCRIPT={'इंदौर':'Indore','दिल्ली':'Delhi','मुंबई':'Mumbai','पुणे':'Pune','कोच्चि':'Kochi','जयपुर':'Jaipur','लखनऊ':'Lucknow','पटना':'Patna','सूरत':'Surat','लुधियाना':'Ludhiana','नागपुर':'Nagpur','नाशिक':'Nashik','भोपाल':'Bhopal','अहमदाबाद':'Ahmedabad','वडोदरा':'Vadodara','बेंगलुरु':'Bengaluru','चेन्नई':'Chennai','हैदराबाद':'Hyderabad','कोलकाता':'Kolkata',
     'சென்னை':'Chennai','கோயம்புத்தூர்':'Coimbatore','ಬೆಂಗಳೂರು':'Bengaluru','ಮೈಸೂರು':'Mysuru','హైదరాబాద్':'Hyderabad','విశాఖపట్నం':'Visakhapatnam','কলকাতা':'Kolkata','અમદાવાદ':'Ahmedabad','સુરત':'Surat','વડોદરા':'Vadodara','ਲੁਧਿਆਣਾ':'Ludhiana','കൊച്ചി':'Kochi','पुणें':'Pune','मुम्बई':'Mumbai'};
+  /* Speech recognition writes numbers as words and in Indian-script digits. Turn both into plain digits
+     when they come before a unit (people, sites, cameras...), so spoken and typed messages parse the same. */
+  const NUMW={'एक':1,'दो':2,'तीन':3,'चार':4,'पांच':5,'पाँच':5,'छह':6,'छः':6,'सात':7,'आठ':8,'नौ':9,'दस':10,'ग्यारह':11,'बारह':12,'पंद्रह':15,'पन्द्रह':15,'बीस':20,'पच्चीस':25,'तीस':30,'चालीस':40,'पचास':50,
+    one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10,eleven:11,twelve:12,fifteen:15,twenty:20,thirty:30,forty:40,fifty:50};
+  const UNIT='people|staff|employees?|workers?|log|लोग|कर्मचारी|team|sites?|branch(?:es)?|outlets?|locations?|stores?|shops?|शाखा|ब्रांच|दुकानें|cameras?|कैमरे|vehicles?|trucks?|bikes?|गाड़ियां|machines?|मशीनें';
+  const NUMRE=new RegExp('(^|[\\s,।])('+Object.keys(NUMW).sort((a,b)=>b.length-a.length).join('|')+')(?=\\s+(?:'+UNIT+'))','gi');
+  function spoken(t){
+    t=t.replace(/[०-९০-৯੦-੯૦-૯௦-௯౦-౯೦-೯൦-൯]/g,c=>String((c.charCodeAt(0)&15)-6));
+    return t.replace(NUMRE,(m,a,w)=>a+NUMW[w.toLowerCase()]);
+  }
   function parse(text, pf) {
-    pf = Object.assign({needs:[]}, pf||{}); const t=text||'';
+    pf = Object.assign({needs:[]}, pf||{}); const t=spoken(text||'');
     for(const [re,k] of KIND){ if(re.test(t)){ pf.kind=pf.kind||k; break; } }
     let m;
     if((m=t.match(/(\d+)\s*(people|staff|employees?|workers?|log|लोग|कर्मचारी|team)/i))) pf.employees=+m[1];
@@ -180,7 +190,7 @@
     if((m=t.match(/(\d+)\s*(machines?|मशीनें)/i))) pf.machines=+m[1];
     Object.keys(CITIES).forEach(c=>{ if(new RegExp('\\b'+c+'\\b','i').test(t)) pf.city=c[0].toUpperCase()+c.slice(1); });
     Object.keys(CITY_SCRIPT).forEach(c=>{ if(t.includes(c)) pf.city=CITY_SCRIPT[c]; });
-    if(/no\s*gst|without gst|gst nahi|gst नहीं|not registered|don'?t have gst|no gstin/i.test(t)) pf.gst='none';
+    if(/no\s*gst|without gst|gst nahi|(gst|जीएसटी)\s*नही|बिना (gst|जीएसटी)|not registered|don'?t have gst|no gstin/i.test(t)) pf.gst='none';
     const g=t.toUpperCase().match(/\b\d{2}[A-Z]{5}\d{4}[A-Z][1-9A-Z]Z[0-9A-Z]\b/); if(g) pf.gstin=g[0];
     if(/no fib(re|er)|fibre (is )?not available|fiber not available|fibre nahi/i.test(t)) pf.noFibre=true;
     if(/only (a )?mobile|just (a )?(sim|mobile)|sirf sim/i.test(t)) pf.mobileOnly=true;

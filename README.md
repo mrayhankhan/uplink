@@ -36,7 +36,8 @@ node prototype/tests/test_kyc.js
 
 ## How it decides
 
-- **Rules engine** (`prototype/src/engine.js`): eligibility, quantities, price, contract and activation order. Deterministic, with 20 scenario tests and an audit on every bundle.
+- **Rules engine** (`prototype/src/engine.js`): eligibility, quantities, price, contract and activation order. Deterministic, with 20 scenario and 3 parsing tests and an audit on every bundle.
+- **Voice in, voice out**: the owner taps the mic and speaks. The browser's speech recogniser turns it into text in the chosen language, and the parser understands spoken forms (number words, Indian-script digits, "जीएसटी"). Replies can be read aloud with the phone's voices. Browsers without speech recognition play one sample Hindi voice note.
 - **Language layer**: reads free text and explains the result. It never sets a price, and every rupee figure in a model reply is checked against the engine.
 - **Smart KYC** (`prototype/src/kyc.js`): runs on raw OCR text. Image gate, GSTIN repair by character position, mod-36 checksum, registry lookup, then name, signatory and bill-age checks. It matches `analysis/kyc_pipeline.py` on all 12 applicants.
 - **Propensity** (`analysis/model.py`): logistic regression on what is known when a lead arrives. AUC 0.72 on a 30% holdout.

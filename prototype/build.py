@@ -5,7 +5,7 @@ import os, shutil
 here=os.path.dirname(os.path.abspath(__file__)); src=os.path.join(here,'src'); dist=os.path.join(here,'dist'); os.makedirs(dist,exist_ok=True)
 r=lambda n:open(os.path.join(src,n),encoding='utf-8').read()
 h=r('shell.html')
-for key,f in [('/*CSS*/','style.css'),('/*DATA*/','data.js'),('/*I18N*/','i18n.js'),('/*ENGINE*/','engine.js'),('/*KYC*/','kyc.js'),('/*APP*/','app.js')]:
+for key,f in [('/*CSS*/','style.css'),('/*DATA*/','data.js'),('/*VOICE*/','voice.js'),('/*I18N*/','i18n.js'),('/*ENGINE*/','engine.js'),('/*KYC*/','kyc.js'),('/*APP*/','app.js')]:
     h=h.replace(key,r(f).replace('</script>','<\\/script>'))
 open(os.path.join(dist,'uplink.html'),'w',encoding='utf-8').write(h)
 head,body=h.split('<header',1)
