@@ -1,0 +1,638 @@
+[
+ {
+  "id": "K01",
+  "flags": [
+   [
+    "GSTIN_CANCELLED",
+    "Registry shows this GSTIN is Cancelled. GST-dependent products are blocked until it is restored."
+   ],
+   [
+    "UDYAM_NUMBER_BLANK",
+    "Udyam certificate has no registration number on it, and no record exists for this business. Treat as unregistered and route to the no-Udyam path."
+   ]
+  ],
+  "soft": [],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 2017.4749918568898,
+    "angle": 0.0,
+    "nlines": 20
+   },
+   "udyam_certificate": {
+    "present": true,
+    "blur": 1460.6235891754288,
+    "angle": 0.0,
+    "nlines": 15
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1232.5003310217292,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1610.6418933825487,
+    "angle": 0.0,
+    "nlines": 17
+   }
+  },
+  "gstin_raw": "371HKXV5167LIZS",
+  "gstin": "37IHKXV5167L1ZS",
+  "legal_doc": "Neha Kaur (Prop. Vindhya Tours & Travels)",
+  "checksum_ok": true,
+  "udyam": null,
+  "lead": "L00045",
+  "business": "Vindhya Tours & Travels",
+  "signatory": "Neha Kaur",
+  "designation": "Office admin",
+  "bill_age": 19,
+  "addr_sim": 0.914,
+  "decision": "STOP"
+ },
+ {
+  "id": "K02",
+  "flags": [],
+  "soft": [
+   [
+    "UDYAM_DATE_DIFF",
+    "Registration date on certificate 2023-01-11, registry 2022-09-27"
+   ],
+   [
+    "SKEWED_SCAN",
+    "GST certificate is rotated 7 degrees; auto-deskewed and read correctly."
+   ]
+  ],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 1853.8256384420995,
+    "angle": 6.999999999999963,
+    "nlines": 20
+   },
+   "udyam_certificate": {
+    "present": true,
+    "blur": 1512.5531943534224,
+    "angle": 0.0,
+    "nlines": 16
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1213.5206546463246,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1549.304517515697,
+    "angle": 0.0,
+    "nlines": 17
+   }
+  },
+  "gstin_raw": "19EOGXH4115YIZL",
+  "gstin": "19EOGXH4115Y1ZL",
+  "legal_doc": "Joseph Shah (Prop. Harmony Dental Care)",
+  "checksum_ok": true,
+  "udyam": "UDYAM-WB-00-5053330",
+  "lead": "L01287",
+  "business": "Harmony Dental Care",
+  "udyam_status": "found",
+  "signatory": "Joseph Shah",
+  "designation": "Manager",
+  "bill_age": 54,
+  "addr_sim": 0.88,
+  "decision": "PASS"
+ },
+ {
+  "id": "K03",
+  "flags": [],
+  "soft": [
+   [
+    "UDYAM_DATE_DIFF",
+    "Registration date on certificate 2024-11-21, registry 2024-10-01"
+   ]
+  ],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 1940.6181448850914,
+    "angle": 0.0,
+    "nlines": 21
+   },
+   "udyam_certificate": {
+    "present": true,
+    "blur": 1515.6118203358542,
+    "angle": 0.0,
+    "nlines": 16
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1194.9823837263061,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1516.2998314315546,
+    "angle": 0.0,
+    "nlines": 17
+   }
+  },
+  "gstin_raw": "27XUIXG0767DIZP",
+  "gstin": "27XUIXG0767D1ZP",
+  "legal_doc": "Joseph Singh (Prop. Ganesh Woodcraft)",
+  "checksum_ok": true,
+  "udyam": "UDYAM-MH-00-9516696",
+  "lead": "L03571",
+  "business": "Ganesh Woodcraft",
+  "udyam_status": "found",
+  "signatory": "Joseph Singh",
+  "designation": "Owner",
+  "bill_age": 46,
+  "addr_sim": 0.896,
+  "decision": "PASS"
+ },
+ {
+  "id": "K04",
+  "flags": [
+   [
+    "UNREADABLE_GST_CERT",
+    "GST certificate too blurred to read (only 1 text lines, sharpness 9). Ask for a re-photo in the same screen."
+   ]
+  ],
+  "soft": [
+   [
+    "UDYAM_DATE_DIFF",
+    "Registration date on certificate 2025-05-17, registry 2020-10-24"
+   ]
+  ],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 8.990446591969468,
+    "angle": 0.0,
+    "nlines": 1
+   },
+   "udyam_certificate": {
+    "present": true,
+    "blur": 1509.7719645799596,
+    "angle": 0.0,
+    "nlines": 16
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1213.425804900601,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1571.936007113478,
+    "angle": 0.0,
+    "nlines": 17
+   }
+  },
+  "gstin_raw": null,
+  "gstin": null,
+  "legal_doc": null,
+  "udyam": "UDYAM-MH-00-6131836",
+  "lead": "L01014",
+  "business": "Saffron Dental Care LLP",
+  "udyam_status": "found",
+  "signatory": "Fatima Pillai",
+  "designation": "Partner",
+  "bill_age": 48,
+  "decision": "FIX"
+ },
+ {
+  "id": "K05",
+  "flags": [
+   [
+    "UDYAM_CERT_MISSING",
+    "Udyam certificate not uploaded. Number UDYAM-KL-00-5521886 found by lookup, so the owner only confirms it (no document needed)."
+   ]
+  ],
+  "soft": [
+   [
+    "OCR_LOW_CONFIDENCE",
+    "GSTIN partly misread by OCR; resolved by registry lookup and confirmed by matching legal name."
+   ]
+  ],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 1856.7660394759375,
+    "angle": 0.0,
+    "nlines": 21
+   },
+   "udyam_certificate": {
+    "present": false
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1163.9611280628756,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1486.5249779872643,
+    "angle": 0.0,
+    "nlines": 18
+   }
+  },
+  "gstin_raw": "32TAXB5481UIZ1",
+  "gstin": "32TZAXB5481U1Z1",
+  "legal_doc": "Balaji Realty LLP",
+  "checksum_ok": true,
+  "udyam": null,
+  "lead": "L04014",
+  "business": "Balaji Realty LLP",
+  "signatory": "Anita Shah",
+  "designation": "Owner",
+  "bill_age": 34,
+  "addr_sim": 0.795,
+  "decision": "FIX"
+ },
+ {
+  "id": "K06",
+  "flags": [
+   [
+    "GSTIN_INVALID",
+    "GSTIN on certificate (08YKZXS8189L1ZO) fails checksum and is not in the registry; nearest registered GSTIN differs by one character: 08YKZXS5189L1ZO."
+   ]
+  ],
+  "soft": [
+   [
+    "UDYAM_DATE_DIFF",
+    "Registration date on certificate 2023-01-24, registry 2025-12-30"
+   ],
+   [
+    "UDYAM_ACTIVITY_DIFF",
+    "Activity on certificate differs from registry (Trading)"
+   ]
+  ],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 1953.0828217228168,
+    "angle": 0.0,
+    "nlines": 21
+   },
+   "udyam_certificate": {
+    "present": true,
+    "blur": 1481.8325951856,
+    "angle": 0.0,
+    "nlines": 16
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1177.1497253814148,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1522.0580080381196,
+    "angle": 0.0,
+    "nlines": 17
+   }
+  },
+  "gstin_raw": "08YKZXS8189LIZO",
+  "gstin": "08YKZXS8189L1ZO",
+  "legal_doc": "Pooja Shah (Prop. Saffron Unisex Salon)",
+  "checksum_ok": false,
+  "nearest": "08YKZXS5189L1ZO",
+  "udyam": "UDYAM-RJ-00-6577157",
+  "lead": "L00115",
+  "business": "Saffron Unisex Salon",
+  "udyam_status": "found",
+  "signatory": "Pooja Shah",
+  "designation": "Owner",
+  "bill_age": 34,
+  "addr_sim": 0.891,
+  "decision": "STOP"
+ },
+ {
+  "id": "K07",
+  "flags": [
+   [
+    "LEGAL_NAME_MISMATCH",
+    "Legal name on certificate \"Neha Banerjee (Prop. Shri Physio Clinic)\" differs from the registry \"Neha Banerjee (Prop. Neelgiri Physio Clinic)\"."
+   ]
+  ],
+  "soft": [
+   [
+    "UDYAM_DATE_DIFF",
+    "Registration date on certificate 2024-07-14, registry 2023-04-04"
+   ]
+  ],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 1942.1483862165755,
+    "angle": 0.0,
+    "nlines": 20
+   },
+   "udyam_certificate": {
+    "present": true,
+    "blur": 1460.0069863090396,
+    "angle": 0.0,
+    "nlines": 16
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1230.1771317614425,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1529.863285892951,
+    "angle": 0.0,
+    "nlines": 17
+   }
+  },
+  "gstin_raw": "07CPCXN0398PIZT",
+  "gstin": "07CPCXN0398P1ZT",
+  "legal_doc": "Neha Banerjee (Prop. Shri Physio Clinic)",
+  "checksum_ok": true,
+  "udyam": "UDYAM-DL-00-9565547",
+  "lead": "L03349",
+  "business": "Neelgiri Physio Clinic",
+  "udyam_status": "found",
+  "signatory": "Neha Banerjee",
+  "designation": "Manager",
+  "bill_age": 10,
+  "addr_sim": 0.889,
+  "decision": "FIX"
+ },
+ {
+  "id": "K08",
+  "flags": [],
+  "soft": [
+   [
+    "UDYAM_DATE_DIFF",
+    "Registration date on certificate 2022-11-12, registry 2021-04-28"
+   ]
+  ],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 2023.4364860778792,
+    "angle": 0.0,
+    "nlines": 20
+   },
+   "udyam_certificate": {
+    "present": true,
+    "blur": 1524.1853422960946,
+    "angle": 0.0,
+    "nlines": 16
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1258.854709200185,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1580.378041325221,
+    "angle": 0.0,
+    "nlines": 17
+   }
+  },
+  "gstin_raw": "24XORXG9365MIZ3",
+  "gstin": "24XORXG9365M1Z3",
+  "legal_doc": "Joseph Rao (Prop. Green Leaf Legal Associates)",
+  "checksum_ok": true,
+  "udyam": "UDYAM-GJ-00-8477445",
+  "lead": "L03473",
+  "business": "Green Leaf Legal Associates",
+  "udyam_status": "found",
+  "signatory": "Joseph Rao",
+  "designation": "Office admin",
+  "bill_age": 50,
+  "addr_sim": 0.889,
+  "decision": "PASS"
+ },
+ {
+  "id": "K09",
+  "flags": [],
+  "soft": [
+   [
+    "UDYAM_DATE_DIFF",
+    "Registration date on certificate 2023-07-04, registry 2024-08-24"
+   ]
+  ],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 2056.5041846446848,
+    "angle": 0.0,
+    "nlines": 20
+   },
+   "udyam_certificate": {
+    "present": true,
+    "blur": 1580.5244934750128,
+    "angle": 0.0,
+    "nlines": 16
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1271.1731410078594,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1607.791393151388,
+    "angle": 0.0,
+    "nlines": 19
+   }
+  },
+  "gstin_raw": "37LDYXK0296FIZB",
+  "gstin": "37LDYXK0296F1ZB",
+  "legal_doc": "Anita Kulkarni (Prop. Kaveri Insurance Advisors)",
+  "checksum_ok": true,
+  "udyam": "UDYAM-AP-00-9751562",
+  "lead": "L04779",
+  "business": "Kaveri Insurance Advisors",
+  "udyam_status": "found",
+  "signatory": "Anita Kulkarni",
+  "designation": "Office admin",
+  "bill_age": 5,
+  "addr_sim": 0.622,
+  "decision": "PASS"
+ },
+ {
+  "id": "K10",
+  "flags": [
+   [
+    "SIGNATORY_MISMATCH",
+    "ID belongs to \"Nisha Arora\" but the applicant on record is \"Fatima Menon\". Ask for the right ID or an authorisation letter."
+   ]
+  ],
+  "soft": [
+   [
+    "UDYAM_DATE_DIFF",
+    "Registration date on certificate 2024-01-09, registry 2024-02-02"
+   ],
+   [
+    "UDYAM_ACTIVITY_DIFF",
+    "Activity on certificate differs from registry (Trading)"
+   ]
+  ],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 1881.7774976359005,
+    "angle": 0.0,
+    "nlines": 21
+   },
+   "udyam_certificate": {
+    "present": true,
+    "blur": 1483.916204986802,
+    "angle": 0.0,
+    "nlines": 16
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1157.1126583448913,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1504.1253737339125,
+    "angle": 0.0,
+    "nlines": 17
+   }
+  },
+  "gstin_raw": "27QHJXK0658UIZL",
+  "gstin": "27QHJXK0658U1ZL",
+  "legal_doc": "Kaveri Stays LLP",
+  "checksum_ok": true,
+  "udyam": "UDYAM-MH-00-7183141",
+  "lead": "L04525",
+  "business": "Kaveri Stays LLP",
+  "udyam_status": "found",
+  "signatory": "Nisha Arora",
+  "designation": "Owner",
+  "bill_age": 27,
+  "addr_sim": 0.891,
+  "decision": "FIX"
+ },
+ {
+  "id": "K11",
+  "flags": [
+   [
+    "ADDRESS_PROOF_STALE",
+    "Bill is dated 2025-10-31, 257 days old; the limit is 90. Ask for a newer bill."
+   ]
+  ],
+  "soft": [
+   [
+    "UDYAM_DATE_DIFF",
+    "Registration date on certificate 2025-09-15, registry 2022-08-31"
+   ],
+   [
+    "UDYAM_ACTIVITY_DIFF",
+    "Activity on certificate differs from registry (Trading)"
+   ]
+  ],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 1990.5458231097793,
+    "angle": 0.0,
+    "nlines": 20
+   },
+   "udyam_certificate": {
+    "present": true,
+    "blur": 1501.5141005022897,
+    "angle": 0.0,
+    "nlines": 16
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1229.8149496070273,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1574.9833635628538,
+    "angle": 0.0,
+    "nlines": 17
+   }
+  },
+  "gstin_raw": "03KGZXT1320RIZZ",
+  "gstin": "03KGZXT1320R1ZZ",
+  "legal_doc": "Trinity Bake House Pvt Ltd",
+  "checksum_ok": true,
+  "udyam": "UDYAM-PB-00-9719478",
+  "lead": "L03485",
+  "business": "Trinity Bake House Pvt Ltd",
+  "udyam_status": "found",
+  "signatory": "Vikram Pillai",
+  "designation": "Owner",
+  "bill_age": 257,
+  "addr_sim": 0.911,
+  "decision": "FIX"
+ },
+ {
+  "id": "K12",
+  "flags": [],
+  "soft": [
+   [
+    "UDYAM_DATE_DIFF",
+    "Registration date on certificate 2024-02-03, registry 2021-10-17"
+   ],
+   [
+    "UDYAM_ACTIVITY_DIFF",
+    "Activity on certificate differs from registry (Trading)"
+   ]
+  ],
+  "docs": {
+   "gst_certificate": {
+    "present": true,
+    "blur": 1965.4037463645182,
+    "angle": 0.0,
+    "nlines": 20
+   },
+   "udyam_certificate": {
+    "present": true,
+    "blur": 1535.4920015656278,
+    "angle": 0.0,
+    "nlines": 16
+   },
+   "signatory_id": {
+    "present": true,
+    "blur": 1169.3639093851132,
+    "angle": 0.0,
+    "nlines": 12
+   },
+   "address_proof": {
+    "present": true,
+    "blur": 1578.4620135859698,
+    "angle": 0.0,
+    "nlines": 18
+   }
+  },
+  "gstin_raw": "37NBLXS1145EIZU",
+  "gstin": "37NBLXS1145E1ZU",
+  "legal_doc": "Pooja Agarwal (Prop. Star Electronics)",
+  "checksum_ok": true,
+  "udyam": "UDYAM-AP-00-5186772",
+  "lead": "L03558",
+  "business": "Star Electronics",
+  "udyam_status": "found",
+  "signatory": "Pooja Agarwal",
+  "designation": "Owner",
+  "bill_age": 9,
+  "addr_sim": 0.914,
+  "decision": "PASS"
+ }
+]

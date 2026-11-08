@@ -1,0 +1,5 @@
+deck/
+docs/
+prototype/dist/
+__pycache__/
+*.pyc

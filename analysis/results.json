@@ -1,0 +1,1054 @@
+{
+ "base": {
+  "leads": 5000,
+  "act": 368,
+  "conv": 0.0736,
+  "spend": 5539640,
+  "cac": 15053.369565217392,
+  "wasted": 3557890,
+  "mrr": 4544990.0,
+  "arpu": 12350.516304347826,
+  "churn": 0.15217391304347827,
+  "nps": 6.861413043478261,
+  "days": 17.616847826086957,
+  "calls": 3.010869565217391
+ },
+ "drops": {
+  "Unreachable after 3 attempts": 805,
+  "Owner had no time for a visit": 531,
+  "Not interested on first call": 470,
+  "Price too high": 414,
+  "Locked in with current provider": 325,
+  "Wrong or invalid number": 319,
+  "Visit not scheduled by sales": 296,
+  "Only wanted a mobile plan": 280,
+  "Competitor offered cheaper plan": 207,
+  "Quote too complex to understand": 206,
+  "Quote took too long to arrive": 179,
+  "Decided to wait": 107,
+  "Installation delayed beyond 21 days": 98,
+  "Missing GST or Udyam document": 94,
+  "Found paperwork too long": 79,
+  "Authorised signatory not available": 53,
+  "Customer cancelled before install": 53,
+  "Document details did not match": 47,
+  "Site not feasible for fibre": 41,
+  "First payment failed": 28
+ },
+ "process_drops": 2776,
+ "all_drops": 4632,
+ "process_share": 0.5993091537132987,
+ "stage_days": {
+  "contact": 1.953804347826087,
+  "needs": 2.9619565217391304,
+  "quote": 4.105978260869565,
+  "kyc": 3.796195652173913,
+  "install": 4.798913043478261
+ },
+ "paper_days": 12.817934782608695,
+ "seg_source": [
+  {
+   "segment": "Micro retail & services",
+   "lead_source": "Channel partner",
+   "leads": 568,
+   "spend": 341450,
+   "act": 30,
+   "mrr": 73360.0,
+   "cac": 11381.7,
+   "arpu": 2445.3,
+   "payback_rev_months": 4.7
+  },
+  {
+   "segment": "Micro retail & services",
+   "lead_source": "Field sales",
+   "leads": 894,
+   "spend": 1431710,
+   "act": 27,
+   "mrr": 70700.0,
+   "cac": 53026.3,
+   "arpu": 2618.5,
+   "payback_rev_months": 20.3
+  },
+  {
+   "segment": "Micro retail & services",
+   "lead_source": "Inbound call",
+   "leads": 269,
+   "spend": 123360,
+   "act": 16,
+   "mrr": 37430.0,
+   "cac": 7710.0,
+   "arpu": 2339.4,
+   "payback_rev_months": 3.3
+  },
+  {
+   "segment": "Micro retail & services",
+   "lead_source": "Referral",
+   "leads": 234,
+   "spend": 138240,
+   "act": 24,
+   "mrr": 60740.0,
+   "cac": 5760.0,
+   "arpu": 2530.8,
+   "payback_rev_months": 2.3
+  },
+  {
+   "segment": "Micro retail & services",
+   "lead_source": "Website form",
+   "leads": 544,
+   "spend": 144360,
+   "act": 11,
+   "mrr": 28910.0,
+   "cac": 13123.6,
+   "arpu": 2628.2,
+   "payback_rev_months": 5.0
+  },
+  {
+   "segment": "Micro retail & services",
+   "lead_source": "WhatsApp campaign",
+   "leads": 200,
+   "spend": 21660,
+   "act": 2,
+   "mrr": 4390.0,
+   "cac": 10830.0,
+   "arpu": 2195.0,
+   "payback_rev_months": 4.9
+  },
+  {
+   "segment": "Professional offices",
+   "lead_source": "Channel partner",
+   "leads": 246,
+   "spend": 397540,
+   "act": 28,
+   "mrr": 190630.0,
+   "cac": 14197.9,
+   "arpu": 6808.2,
+   "payback_rev_months": 2.1
+  },
+  {
+   "segment": "Professional offices",
+   "lead_source": "Field sales",
+   "leads": 447,
+   "spend": 868850,
+   "act": 53,
+   "mrr": 351410.0,
+   "cac": 16393.4,
+   "arpu": 6630.4,
+   "payback_rev_months": 2.5
+  },
+  {
+   "segment": "Professional offices",
+   "lead_source": "Inbound call",
+   "leads": 130,
+   "spend": 67040,
+   "act": 13,
+   "mrr": 84200.0,
+   "cac": 5156.9,
+   "arpu": 6476.9,
+   "payback_rev_months": 0.8
+  },
+  {
+   "segment": "Professional offices",
+   "lead_source": "Referral",
+   "leads": 101,
+   "spend": 64620,
+   "act": 22,
+   "mrr": 157470.0,
+   "cac": 2937.3,
+   "arpu": 7157.7,
+   "payback_rev_months": 0.4
+  },
+  {
+   "segment": "Professional offices",
+   "lead_source": "Website form",
+   "leads": 233,
+   "spend": 66960,
+   "act": 18,
+   "mrr": 132420.0,
+   "cac": 3720.0,
+   "arpu": 7356.7,
+   "payback_rev_months": 0.5
+  },
+  {
+   "segment": "Professional offices",
+   "lead_source": "WhatsApp campaign",
+   "leads": 90,
+   "spend": 10860,
+   "act": 4,
+   "mrr": 21700.0,
+   "cac": 2715.0,
+   "arpu": 5425.0,
+   "payback_rev_months": 0.5
+  },
+  {
+   "segment": "Small manufacturers",
+   "lead_source": "Channel partner",
+   "leads": 61,
+   "spend": 317700,
+   "act": 8,
+   "mrr": 191410.0,
+   "cac": 39712.5,
+   "arpu": 23926.2,
+   "payback_rev_months": 1.7
+  },
+  {
+   "segment": "Small manufacturers",
+   "lead_source": "Field sales",
+   "leads": 101,
+   "spend": 200000,
+   "act": 11,
+   "mrr": 143980.0,
+   "cac": 18181.8,
+   "arpu": 13089.1,
+   "payback_rev_months": 1.4
+  },
+  {
+   "segment": "Small manufacturers",
+   "lead_source": "Inbound call",
+   "leads": 29,
+   "spend": 16480,
+   "act": 7,
+   "mrr": 121290.0,
+   "cac": 2354.3,
+   "arpu": 17327.1,
+   "payback_rev_months": 0.1
+  },
+  {
+   "segment": "Small manufacturers",
+   "lead_source": "Referral",
+   "leads": 19,
+   "spend": 14220,
+   "act": 7,
+   "mrr": 158420.0,
+   "cac": 2031.4,
+   "arpu": 22631.4,
+   "payback_rev_months": 0.1
+  },
+  {
+   "segment": "Small manufacturers",
+   "lead_source": "Website form",
+   "leads": 58,
+   "spend": 15720,
+   "act": 3,
+   "mrr": 102120.0,
+   "cac": 5240.0,
+   "arpu": 34040.0,
+   "payback_rev_months": 0.2
+  },
+  {
+   "segment": "Small manufacturers",
+   "lead_source": "WhatsApp campaign",
+   "leads": 21,
+   "spend": 2880,
+   "act": 1,
+   "mrr": 22030.0,
+   "cac": 2880.0,
+   "arpu": 22030.0,
+   "payback_rev_months": 0.1
+  },
+  {
+   "segment": "Small multi-site businesses",
+   "lead_source": "Channel partner",
+   "leads": 135,
+   "spend": 632240,
+   "act": 15,
+   "mrr": 383690.0,
+   "cac": 42149.3,
+   "arpu": 25579.3,
+   "payback_rev_months": 1.6
+  },
+  {
+   "segment": "Small multi-site businesses",
+   "lead_source": "Field sales",
+   "leads": 278,
+   "spend": 541310,
+   "act": 34,
+   "mrr": 1054650.0,
+   "cac": 15920.9,
+   "arpu": 31019.1,
+   "payback_rev_months": 0.5
+  },
+  {
+   "segment": "Small multi-site businesses",
+   "lead_source": "Inbound call",
+   "leads": 76,
+   "spend": 38560,
+   "act": 12,
+   "mrr": 357490.0,
+   "cac": 3213.3,
+   "arpu": 29790.8,
+   "payback_rev_months": 0.1
+  },
+  {
+   "segment": "Small multi-site businesses",
+   "lead_source": "Referral",
+   "leads": 59,
+   "spend": 32940,
+   "act": 8,
+   "mrr": 299040.0,
+   "cac": 4117.5,
+   "arpu": 37380.0,
+   "payback_rev_months": 0.1
+  },
+  {
+   "segment": "Small multi-site businesses",
+   "lead_source": "Website form",
+   "leads": 160,
+   "spend": 46080,
+   "act": 11,
+   "mrr": 374420.0,
+   "cac": 4189.1,
+   "arpu": 34038.2,
+   "payback_rev_months": 0.1
+  },
+  {
+   "segment": "Small multi-site businesses",
+   "lead_source": "WhatsApp campaign",
+   "leads": 47,
+   "spend": 4860,
+   "act": 3,
+   "mrr": 123090.0,
+   "cac": 1620.0,
+   "arpu": 41030.0,
+   "payback_rev_months": 0.0
+  }
+ ],
+ "segments": [
+  {
+   "segment": "Micro retail & services",
+   "leads": 2709,
+   "spend": 2200780,
+   "act": 110,
+   "mrr": 275530.0,
+   "gst": 0.5282,
+   "spendm": 903.2853,
+   "conv": 0.0406,
+   "cac": 20007.0909,
+   "arpu": 2504.8182,
+   "mrr_share": 0.0606,
+   "lead_share": 0.5418,
+   "mrr_per_100": 10170.9118,
+   "churn": 0.2273,
+   "nps": 7.0455,
+   "pay": 7.9874,
+   "quote_acc": 0.3224,
+   "price_ratio": 2.773
+  },
+  {
+   "segment": "Professional offices",
+   "leads": 1247,
+   "spend": 1475870,
+   "act": 138,
+   "mrr": 937830.0,
+   "gst": 0.8613,
+   "spendm": 2592.7025,
+   "conv": 0.1107,
+   "cac": 10694.7101,
+   "arpu": 6795.8696,
+   "mrr_share": 0.2063,
+   "lead_share": 0.2494,
+   "mrr_per_100": 75206.8966,
+   "churn": 0.1377,
+   "nps": 6.9203,
+   "pay": 1.5737,
+   "quote_acc": 0.5297,
+   "price_ratio": 2.6212
+  },
+  {
+   "segment": "Small manufacturers",
+   "leads": 289,
+   "spend": 567000,
+   "act": 37,
+   "mrr": 739250.0,
+   "gst": 0.9931,
+   "spendm": 13914.1869,
+   "conv": 0.128,
+   "cac": 15324.3243,
+   "arpu": 19979.7297,
+   "mrr_share": 0.1627,
+   "lead_share": 0.0578,
+   "mrr_per_100": 255795.8478,
+   "churn": 0.0811,
+   "nps": 6.4595,
+   "pay": 0.767,
+   "quote_acc": 0.6434,
+   "price_ratio": 1.4359
+  },
+  {
+   "segment": "Small multi-site businesses",
+   "leads": 755,
+   "spend": 1295990,
+   "act": 83,
+   "mrr": 2592380.0,
+   "gst": 0.9828,
+   "spendm": 9123.6424,
+   "conv": 0.1099,
+   "cac": 15614.3373,
+   "arpu": 31233.494,
+   "mrr_share": 0.5704,
+   "lead_share": 0.151,
+   "mrr_per_100": 343361.5894,
+   "churn": 0.1084,
+   "nps": 6.6988,
+   "pay": 0.4999,
+   "quote_acc": 0.5619,
+   "price_ratio": 3.4234
+  }
+ ],
+ "sources": [
+  {
+   "lead_source": "Channel partner",
+   "leads": 1010,
+   "spend": 1688930,
+   "act": 81,
+   "mrr": 839090.0,
+   "contacted": 0.7119,
+   "conv": 0.0802,
+   "cac": 20850.9877,
+   "churn": 0.1852
+  },
+  {
+   "lead_source": "Field sales",
+   "leads": 1720,
+   "spend": 3041870,
+   "act": 125,
+   "mrr": 1620740.0,
+   "contacted": 0.7343,
+   "conv": 0.0727,
+   "cac": 24334.96,
+   "churn": 0.096
+  },
+  {
+   "lead_source": "Inbound call",
+   "leads": 504,
+   "spend": 245440,
+   "act": 48,
+   "mrr": 600410.0,
+   "contacted": 0.8016,
+   "conv": 0.0952,
+   "cac": 5113.3333,
+   "churn": 0.1458
+  },
+  {
+   "lead_source": "Referral",
+   "leads": 413,
+   "spend": 250020,
+   "act": 61,
+   "mrr": 675670.0,
+   "contacted": 0.7893,
+   "conv": 0.1477,
+   "cac": 4098.6885,
+   "churn": 0.2459
+  },
+  {
+   "lead_source": "Website form",
+   "leads": 995,
+   "spend": 273120,
+   "act": 43,
+   "mrr": 637870.0,
+   "contacted": 0.5487,
+   "conv": 0.0432,
+   "cac": 6351.6279,
+   "churn": 0.1163
+  },
+  {
+   "lead_source": "WhatsApp campaign",
+   "leads": 358,
+   "spend": 40260,
+   "act": 10,
+   "mrr": 171210.0,
+   "contacted": 0.4134,
+   "conv": 0.0279,
+   "cac": 4026.0,
+   "churn": 0.2
+  }
+ ],
+ "partner_payout_mult": 1.7135509607605783,
+ "partner_payout_avg": 16438.024691358023,
+ "rules": {
+  "strict": 56,
+  "strict_share": 0.15217391304347827,
+  "by": {
+   "size": 8,
+   "tier": 24,
+   "gstin_missing": 11,
+   "gst_product_on_inactive": 10,
+   "gstin_inactive": 22,
+   "dependency": 9
+  },
+  "any": 68,
+  "any_ex_inactive": 56,
+  "mrr_any": 816220.0,
+  "inactive": 22,
+  "inactive_mrr": 194260.0
+ },
+ "gst_status": [
+  {
+   "status": "Active",
+   "n": 3266,
+   "act": 316,
+   "conv": 0.09675443968156766
+  },
+  {
+   "status": "Cancelled",
+   "n": 167,
+   "act": 18,
+   "conv": 0.10778443113772455
+  },
+  {
+   "status": "Suspended",
+   "n": 101,
+   "act": 4,
+   "conv": 0.039603960396039604
+  }
+ ],
+ "nogst": {
+  "leads": 1466,
+  "share": 0.2932,
+  "gst_free_interest": 866,
+  "act_free": 0.018475750577367205,
+  "gst_free_products": 15,
+  "kyc_pass_no": 0.24736842105263157,
+  "kyc_pass_yes": 0.8062593144560357,
+  "quote_no": 190
+ },
+ "language": {
+  "he": 0.07957639939485628,
+  "reg": 0.061946902654867256,
+  "z": 2.2598900788089415,
+  "p": 0.023828073818433992,
+  "reg_leads": 1695,
+  "by_seg": {
+   "Micro retail & services": {
+    "HE": 0.0462,
+    "REG": 0.0292
+   },
+   "Professional offices": {
+    "HE": 0.1252,
+    "REG": 0.0841
+   },
+   "Small manufacturers": {
+    "HE": 0.1231,
+    "REG": 0.1383
+   },
+   "Small multi-site businesses": {
+    "HE": 0.1118,
+    "REG": 0.1066
+   }
+  }
+ },
+ "tier": {
+  "t1": 0.7269736842105263,
+  "t2": 0.5176056338028169,
+  "t2_kyc": 284,
+  "t2_act": 147,
+  "parity_add": 59.46052631578949,
+  "delayed": [
+   0.13157894736842105,
+   0.20422535211267606
+  ],
+  "infeasible": [
+   0.046052631578947366,
+   0.09507042253521127
+  ],
+  "p04_share": 0.024456521739130436
+ },
+ "chase": [
+  {
+   "customer_follow_up_calls": 1,
+   "n": 34,
+   "churn": 0.0588,
+   "nps": 7.4706
+  },
+  {
+   "customer_follow_up_calls": 2,
+   "n": 84,
+   "churn": 0.1429,
+   "nps": 7.1905
+  },
+  {
+   "customer_follow_up_calls": 3,
+   "n": 137,
+   "churn": 0.1168,
+   "nps": 6.8905
+  },
+  {
+   "customer_follow_up_calls": 4,
+   "n": 70,
+   "churn": 0.2,
+   "nps": 6.6571
+  },
+  {
+   "customer_follow_up_calls": 5,
+   "n": 43,
+   "churn": 0.2791,
+   "nps": 5.9767
+  }
+ ],
+ "chase_le2": 0.11864406779661017,
+ "chase_ge4": 0.23008849557522124,
+ "chase_share_ge4": 0.3070652173913043,
+ "nps_by_days": {
+  "le18": 7.168888888888889,
+  "gt21": 5.983333333333333
+ },
+ "accel_base": {
+  "leads": 1890,
+  "conv": 0.09206349206349207,
+  "other": 0.062379421221864954,
+  "share": 0.378
+ },
+ "zero_overlap": 198,
+ "zero_overlap_share": 0.5380434782608695,
+ "bundle_mix": [
+  {
+   "segment": "Micro retail & services",
+   "top": [
+    [
+     "P07",
+     1.0
+    ],
+    [
+     "P01",
+     0.92
+    ],
+    [
+     "P19",
+     0.34
+    ],
+    [
+     "P22",
+     0.31
+    ],
+    [
+     "P23",
+     0.3
+    ],
+    [
+     "P15",
+     0.25
+    ],
+    [
+     "P18",
+     0.15
+    ],
+    [
+     "P04",
+     0.08
+    ]
+   ],
+   "med_qty": {
+    "P07": 2.0,
+    "P01": 1.0,
+    "P19": 1.0,
+    "P22": 1.0,
+    "P23": 1.0,
+    "P15": 1.0,
+    "P18": 1.0,
+    "P04": 1.0
+   }
+  },
+  {
+   "segment": "Professional offices",
+   "top": [
+    [
+     "P16",
+     1.0
+    ],
+    [
+     "P08",
+     0.52
+    ],
+    [
+     "P20",
+     0.49
+    ],
+    [
+     "P07",
+     0.48
+    ],
+    [
+     "P02",
+     0.44
+    ],
+    [
+     "P17",
+     0.41
+    ],
+    [
+     "P03",
+     0.3
+    ],
+    [
+     "P12",
+     0.28
+    ]
+   ],
+   "med_qty": {
+    "P16": 7.0,
+    "P08": 3.0,
+    "P20": 6.0,
+    "P07": 2.0,
+    "P02": 1.0,
+    "P17": 1.0,
+    "P03": 1.0,
+    "P12": 3.0
+   }
+  },
+  {
+   "segment": "Small manufacturers",
+   "top": [
+    [
+     "P08",
+     1.0
+    ],
+    [
+     "P16",
+     1.0
+    ],
+    [
+     "P05",
+     0.51
+    ],
+    [
+     "P20",
+     0.43
+    ],
+    [
+     "P21",
+     0.38
+    ],
+    [
+     "P23",
+     0.35
+    ],
+    [
+     "P11",
+     0.35
+    ],
+    [
+     "P24",
+     0.32
+    ]
+   ],
+   "med_qty": {
+    "P08": 4.0,
+    "P16": 11.0,
+    "P05": 1.0,
+    "P20": 8.5,
+    "P21": 1.0,
+    "P23": 5.0,
+    "P11": 1.0,
+    "P24": 9.5
+   }
+  },
+  {
+   "segment": "Small multi-site businesses",
+   "top": [
+    [
+     "P08",
+     1.0
+    ],
+    [
+     "P09",
+     0.57
+    ],
+    [
+     "P01",
+     0.52
+    ],
+    [
+     "P19",
+     0.52
+    ],
+    [
+     "P02",
+     0.48
+    ],
+    [
+     "P23",
+     0.46
+    ],
+    [
+     "P10",
+     0.46
+    ],
+    [
+     "P13",
+     0.34
+    ]
+   ],
+   "med_qty": {
+    "P08": 4.0,
+    "P09": 8.0,
+    "P01": 7.0,
+    "P19": 7.0,
+    "P02": 8.0,
+    "P23": 10.5,
+    "P10": 6.0,
+    "P13": 1.0
+   }
+  }
+ ],
+ "overbundle": {
+  "n": 8,
+  "churn": 0.375,
+  "other": 0.14722222222222223
+ },
+ "propensity": {
+  "auc": 0.7247430028436854,
+  "top10": 0.23711340206185566,
+  "top20": 0.4845360824742268,
+  "top30": 0.6082474226804123,
+  "base": 0.06466666666666666,
+  "top20_rate": 0.15666666666666668,
+  "bottom50_share": 0.17525773195876287,
+  "n_test": 1500
+ },
+ "propensity_model": {
+  "names": [
+   "intercept",
+   "segment=Professional offices",
+   "segment=Small manufacturers",
+   "segment=Small multi-site businesses",
+   "lead_source=Field sales",
+   "lead_source=Inbound call",
+   "lead_source=Referral",
+   "lead_source=Website form",
+   "lead_source=WhatsApp campaign",
+   "tier2",
+   "gstin",
+   "udyam",
+   "regional_lang",
+   "accel_customer",
+   "log_spend",
+   "log_emp",
+   "log_sites",
+   "inactive_gstin"
+  ],
+  "w": [
+   -2.9070544330724166,
+   0.4577262058334491,
+   0.36573504792910605,
+   0.6095896592904675,
+   -0.055911886753378014,
+   0.0636648203059293,
+   0.21070409996161923,
+   -0.27112084741544157,
+   -0.28781226780319896,
+   -0.21889055227306245,
+   0.6015904955893745,
+   0.08495766923208924,
+   -0.16408421087215264,
+   0.20093149433828988,
+   -0.15134236859785716,
+   -0.16143573105205494,
+   -0.1424069385059312,
+   -0.050117317102648946
+  ],
+  "mu": {
+   "segment=Professional offices": 0.2494,
+   "segment=Small manufacturers": 0.0578,
+   "segment=Small multi-site businesses": 0.151,
+   "lead_source=Field sales": 0.344,
+   "lead_source=Inbound call": 0.1008,
+   "lead_source=Referral": 0.0826,
+   "lead_source=Website form": 0.199,
+   "lead_source=WhatsApp campaign": 0.0716,
+   "tier2": 0.4844,
+   "gstin": 0.7068,
+   "udyam": 0.5446,
+   "regional_lang": 0.339,
+   "accel_customer": 0.378,
+   "log_spend": 7.491323723963362,
+   "log_emp": 2.282041681563346,
+   "log_sites": 0.9230552019334982,
+   "inactive_gstin": 0.0536
+  },
+  "sd": {
+   "segment=Professional offices": 0.43270901009510243,
+   "segment=Small manufacturers": 0.2333882045237123,
+   "segment=Small multi-site businesses": 0.35808468960426915,
+   "lead_source=Field sales": 0.4750885620896021,
+   "lead_source=Inbound call": 0.30109382507500826,
+   "lead_source=Referral": 0.2753041926300723,
+   "lead_source=Website form": 0.39928797399525495,
+   "lead_source=WhatsApp campaign": 0.2578502227019971,
+   "tier2": 0.49980656390274036,
+   "gstin": 0.45527487855471294,
+   "udyam": 0.49805667558061917,
+   "regional_lang": 0.4734171783585308,
+   "accel_customer": 0.4849361118812676,
+   "log_spend": 1.0640301598836746,
+   "log_emp": 1.1804055255630785,
+   "log_sites": 0.5173664703676135,
+   "inactive_gstin": 0.22524916745126386
+  }
+ },
+ "propensity_top": [
+  [
+   "segment=Small multi-site businesses",
+   0.61
+  ],
+  [
+   "gstin",
+   0.602
+  ],
+  [
+   "segment=Professional offices",
+   0.458
+  ],
+  [
+   "segment=Small manufacturers",
+   0.366
+  ],
+  [
+   "lead_source=WhatsApp campaign",
+   -0.288
+  ],
+  [
+   "lead_source=Website form",
+   -0.271
+  ],
+  [
+   "tier2",
+   -0.219
+  ],
+  [
+   "lead_source=Referral",
+   0.211
+  ],
+  [
+   "accel_customer",
+   0.201
+  ],
+  [
+   "regional_lang",
+   -0.164
+  ]
+ ],
+ "recov": {
+  "Unreachable after 3 attempts": 0.25,
+  "Wrong or invalid number": 0.2,
+  "Not interested on first call": 0.0,
+  "Owner had no time for a visit": 0.5,
+  "Visit not scheduled by sales": 0.7,
+  "Only wanted a mobile plan": 0.25,
+  "Locked in with current provider": 0.0,
+  "Quote too complex to understand": 0.6,
+  "Quote took too long to arrive": 0.8,
+  "Price too high": 0.15,
+  "Competitor offered cheaper plan": 0.1,
+  "Decided to wait": 0.05,
+  "Missing GST or Udyam document": 0.6,
+  "Found paperwork too long": 0.7,
+  "Authorised signatory not available": 0.5,
+  "Document details did not match": 0.4,
+  "Installation delayed beyond 21 days": 0.5,
+  "Site not feasible for fibre": 0.5,
+  "Customer cancelled before install": 0.2,
+  "First payment failed": 0.6
+ },
+ "impact": {
+  "low": {
+   "act": 534.8549087014505,
+   "conv": 0.10697098174029011,
+   "cost": 4027110.3978651566,
+   "cac": 7529.3511050359275,
+   "mrr": 6171396.584604198,
+   "seg": {
+    "Micro retail & services": 195.3527009045675,
+    "Professional offices": 193.9281521914669,
+    "Small manufacturers": 50.59544876265043,
+    "Small multi-site businesses": 116.97860684276573
+   },
+   "flows": [
+    5000.0,
+    3498.7675,
+    2220.450124007575,
+    1103.294776655417,
+    815.567112696294,
+    556.8549087014505
+   ]
+  },
+  "base": {
+   "act": 713.369304046337,
+   "conv": 0.1426738608092674,
+   "cost": 4496893.10136627,
+   "cac": 6303.737875822835,
+   "mrr": 7870814.501993977,
+   "seg": {
+    "Micro retail & services": 281.8778133829045,
+    "Professional offices": 243.73933536886412,
+    "Small manufacturers": 62.623465432487976,
+    "Small multi-site businesses": 147.12868986208062
+   },
+   "flows": [
+    5000.0,
+    3565.0299999999997,
+    2403.2135557013817,
+    1299.6442572823134,
+    1016.8632170129508,
+    735.369304046337
+   ]
+  },
+  "high": {
+   "act": 1093.6484225816191,
+   "conv": 0.21872968451632382,
+   "cost": 5418355.1430468075,
+   "cac": 4954.384819809343,
+   "mrr": 11324948.527473021,
+   "seg": {
+    "Micro retail & services": 477.79651643458976,
+    "Professional offices": 343.74388438766147,
+    "Small manufacturers": 86.67903855542392,
+    "Small multi-site businesses": 207.42898320394357
+   },
+   "flows": [
+    5000.0,
+    3671.0500000000006,
+    2707.2962697189787,
+    1656.4301728627283,
+    1416.9065847316976,
+    1115.6484225816191
+   ]
+  }
+ },
+ "waterfall": [
+  [
+   "Today",
+   368.0
+  ],
+  [
+   "Compliance block",
+   -22.0
+  ],
+  [
+   "Contact",
+   15.778265541128121
+  ],
+  [
+   "Needs",
+   57.84554910568511
+  ],
+  [
+   "Quote",
+   102.12766723002778
+  ],
+  [
+   "KYC",
+   92.05766817332426
+  ],
+  [
+   "Install",
+   99.56015399617172
+  ]
+ ],
+ "impact_delta": {
+  "act_x": 1.9385035436041766,
+  "cac_drop": 0.5812407415819795,
+  "mrr_x": 1.731756175919854,
+  "mrr_add": 3325824.5019939775,
+  "arr_add": 39909894.02392773,
+  "arr_add_annual_cohorts": 159639576.09571093
+ }
+}
