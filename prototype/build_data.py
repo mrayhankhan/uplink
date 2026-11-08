@@ -50,5 +50,20 @@ def mask(n):
 bo=[dict(id=r.lead_id,biz=r.business_name,seg=r.segment,city=r.city,tier=int(r.city_tier),lang=r.preferred_language,src=r.lead_source,stage=r.stage_reached,why=r.drop_reason,score=round(float(r.score),3),route=r.route,spend=int(r.monthly_telecom_spend_inr),contact=mask(r.contact_name)) for r in Q.itertuples()]
 stats=dict(leads=R['base']['leads'],act=R['base']['act'],auc=round(R['propensity']['auc'],3),top20=round(R['propensity']['top20'],3),scored=int(len(L2[L2.drop_reason.isin(PROC)])))
 kres=[dict(id=k['id'],decision=k['decision'],flags=k['flags'],soft=k['soft'],biz=k.get('business')) for k in K]
-js='window.DATA='+json.dumps(dict(cat=cat,gst=gst,ud=ud,leads=leads,ocr=ocr,blur=blur,thumbs=thumbs,bo=bo,stats=stats,kres=kres),ensure_ascii=False,separators=(',',':'))+';'
+# demo scenarios are real leads from the case pack; five of them have specimen documents
+SPEC=[('L01287','K02','clinic','Kolkata clinic, 5 staff, clean documents'),
+      ('L00014',None,'store','Kirana, no GSTIN, wants WhatsApp'),
+      ('L04525','K10','bed','4 hotels, signatory does not match'),
+      ('L03485','K11','store','8 bakeries, electricity bill is 257 days old'),
+      ('L03571','K03','factory','Tier 2 workshop that asks for 1 Gbps'),
+      ('L00045','K01','pin','Travel agency with a cancelled GSTIN')]
+KIND={'Micro retail & services':'micro','Professional offices':'prof','Small multi-site businesses':'multi','Small manufacturers':'mfg'}
+NEED={'P15':'whatsapp','P23':'cctv','P19':'pos','P18':'website','P16':'email','P17':'backup','P20':'antivirus','P21':'firewall','P22':'wifi','P25':'fleet','P24':'iot','P13':'tollfree','P12':'ivr','P14':'sms','P11':'staticip','P09':'failover','P10':'sdwan','P05':'leased','P03':'gigabit','P06':'leased100'}
+scen=[]
+for lid,kid,icon,sub in SPEC:
+    r=L[L.lead_id==lid].iloc[0]
+    needs=[NEED[p] for p in str(r.products_of_interest).split(';') if p in NEED]
+    scen.append(dict(lead=lid,kid=kid,icon=icon,sub=sub,biz=r.business_name,type=r.business_type,kind=KIND[r.segment],city=r.city,employees=int(r.employee_count),sites=int(r.num_sites),
+        gstin=r.gstin if isinstance(r.gstin,str) else None,needs=needs,lang=r.preferred_language,spend=int(r.monthly_telecom_spend_inr),asked=[p for p in str(r.products_of_interest).split(';') if p]))
+js='window.DATA='+json.dumps(dict(cat=cat,gst=gst,ud=ud,leads=leads,ocr=ocr,blur=blur,thumbs=thumbs,bo=bo,stats=stats,kres=kres,scen=scen),ensure_ascii=False,separators=(',',':'))+';'
 open(out,'w',encoding='utf-8').write(js); print('data.js KB',len(js)//1024,'bo',len(bo),'leads',len(leads))

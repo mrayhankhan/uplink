@@ -41,7 +41,7 @@
     if(bm){const age=Math.round((TODAY-new Date(bm[0]))/864e5);rec.billAge=age;log(`address proof dated ${bm[0]}: ${age} days old, limit 90`);if(age>90)rec.flags.push(['ADDRESS_PROOF_STALE',`Bill is ${age} days old and the limit is 90. Ask for a newer bill.`])}
     if(lowConf)rec.soft.push(['OCR_LOW_CONFIDENCE','OCR misread part of the GSTIN. Registry lookup and the legal name resolved it.']);
     if(O('gst_certificate')&&Math.abs(O('gst_certificate').a)>3)rec.soft.push(['SKEWED_SCAN',`Scan is rotated ${Math.round(O('gst_certificate').a)} degrees and was still read correctly.`]);
-    rec.gstin=g;rec.reg=reg;
+    rec.gstin=g;rec.reg=reg;rec.sig=sname;rec.contact=lead?lead.contact:null;rec.udyamNo=um;rec.billDate=bm?bm[0]:null;rec.lines=gd.length;
     rec.decision=!rec.flags.length?'PASS':rec.flags.some(f=>/GSTIN_(CANCELLED|SUSPENDED|INVALID)/.test(f[0]))?'STOP':'FIX';
     return rec;
   }
