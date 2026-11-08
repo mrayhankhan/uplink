@@ -156,6 +156,7 @@ h1,h2,h3,p{margin:0}
 .rows .i{font-size:20px;color:var(--peacock);margin-top:1px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .mini{background:var(--card);border-radius:14px;padding:10px 11px;font-size:13px;line-height:1.36;color:var(--mute);box-shadow:0 1px 2px rgba(16,33,31,.05)}
+.mini.wide{grid-column:1/-1}
 .mini b{display:block;color:var(--ink);font-size:12.5px;margin-bottom:3px}
 .opt{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;background:var(--card);border-radius:14px;padding:11px 12px;font-size:13.7px;line-height:1.38;box-shadow:0 1px 2px rgba(16,33,31,.05)}
 
@@ -712,7 +713,7 @@ function quote(){const b=S.bundle;E.reprice(b);const bl=b.blocked.filter(x=>!x.q
  </div><div class="foot"><div class="foot-s"><small>Monthly</small><b>${inr(b.monthly)}</b></div><button class="btn" id="tokyc">Continue${ic('arrow')}</button></div>`}
 function consent(){return `<div class="scroll"><div class="shield">${ic('shieldc')}</div><h2 class="h">${t('consentT')}</h2>
  <ul class="rows"><li>${ic('target')}<span>${t('c1')}</span></li><li>${ic('lock')}<span>${t('c2')}</span></li><li>${ic('user')}<span>${t('c3')}</span></li></ul>
- <div class="two"><div class="mini"><b>We collect</b>GSTIN or PAN, Udyam number, signatory ID, one address proof</div><div class="mini"><b>We never collect</b>Full Aadhaar number, bank statements, contacts, location history</div></div>
+ <div class="two"><div class="mini"><b>We collect</b>GSTIN or PAN, Udyam number, signatory ID, one address proof</div><div class="mini"><b>We never collect</b>Full Aadhaar number, bank statements, contacts, location history</div><div class="mini wide"><b>How long we keep it</b>Document photos 1 year in a locked vault, then deleted. Registry results for your contract plus 1 year. Your offers choice until you change it.</div></div>
  <label class="opt"><span>Send me offers on WhatsApp. Optional, and it does not affect my order.</span><span class="sw"><input type="checkbox" id="mkt" ${S.mkt?'checked':''} aria-label="Send me offers on WhatsApp"><i></i></span></label>
  </div><div class="foot"><button class="btn" id="agree">${t('agree')}</button></div>`}
 const RULES=[['tier','City tier'],['size','Staff size'],['sites','Number of sites'],['gst','Active GSTIN'],['dep','Needs a base product']];
