@@ -1,12 +1,17 @@
 # Uplink: a small business, connected in one sitting
 
-Team IIITDards, IIIT Delhi. Airtel Sync 2026 Digital Track, case Project Udyam Digital.
+Airtel Sync 2026 Digital Track, case Project Udyam Digital.
 
 **Live prototype: https://mrayhankhan.github.io/uplink/**
 
 **Demo video (2:53): https://mrayhankhan.github.io/uplink/demo.mp4**
 
 The case operator, Accel Telecom, is fictional. All leads, businesses, people, identifiers and documents are synthetic and come from the case pack.
+
+## Team IIITDards, IIIT Delhi
+
+- M Rayhan Khan ([@mrayhankhan](https://github.com/mrayhankhan))
+- Raunak Kumar Giri ([@raunak23427](https://github.com/raunak23427))
 
 ## What is here
 
