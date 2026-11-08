@@ -4,6 +4,8 @@ Team IIITDards, IIIT Delhi. Airtel Sync 2026 Digital Track, case Project Udyam D
 
 **Live prototype: https://mrayhankhan.github.io/baithak/**
 
+**Demo video (2:30): https://mrayhankhan.github.io/baithak/demo.mp4**
+
 The case operator, Accel Telecom, is fictional. All leads, businesses, people, identifiers and documents are synthetic and come from the case pack.
 
 ## What is here
