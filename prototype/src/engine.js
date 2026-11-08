@@ -1,4 +1,4 @@
-/* Baithak rules engine. Deterministic: eligibility, quantities, prices, contract, timeline.
+/* Uplink rules engine. Deterministic: eligibility, quantities, prices, contract, timeline.
    The language model never decides anything in this file. It only extracts a profile and explains the result. */
 (function (root) {
   const CITIES = {

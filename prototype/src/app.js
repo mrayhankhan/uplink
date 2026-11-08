@@ -1,4 +1,4 @@
-/* Baithak prototype UI. State lives in S; every screen re-renders from it. */
+/* Uplink prototype UI. State lives in S; every screen re-renders from it. */
 (function(){
 const D=window.DATA,E=window.Engine,K=window.KYC,T=window.I18N;
 const $=s=>document.querySelector(s), esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -36,7 +36,7 @@ async function llmExplain(){
   if(!S.sample){S.explain=fallbackExplain(b);renderScreen();return}
   S.explain='…';renderScreen();
   const facts=b.lines.map(l=>`${l.name} x${l.qty}: ₹${l.total} a month. ${l.why}`).join('\n');
-  const prompt=`You are Baithak, the small-business advisor of Accel Business. In ${lang}, write 3 short plain sentences telling this owner why the bundle fits their ${b.segmentName}.
+  const prompt=`You are Uplink, the small-business advisor of Accel Business. In ${lang}, write 3 short plain sentences telling this owner why the bundle fits their ${b.segmentName}.
 Use only the facts below. Do not change, round or invent any price or date. Do not offer a discount. Do not mention other companies.
 Bundle: ${b.name}. Total ₹${b.monthly} a month for ${b.contract} months, one-time setup ₹${b.setup}.
 ${facts}`;
@@ -96,7 +96,7 @@ function runScenario(i){const s=SCEN[i];reset();S.scen=i;renderScen();S.pf=JSON.
 function reset(){Object.assign(S,{screen:'chat',step:0,pf:{needs:[]},bundle:null,msgs:[],chips:[],pending:null,consent:false,kyc:null,checks:null,fixed:false,day:0,signed:false,explain:null,thinking:false,seen:0,scen:-1,kid:'K03'});renderScen();renderSteps()}
 
 /* screens */
-const AV='<span class="av" aria-hidden="true">ब</span>';
+const AV='<span class="av" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V8.5M7 13.5l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.6 4.6a6.6 6.6 0 0 1 8.8 0" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg></span>';
 const NN={whatsapp:'WhatsApp',cctv:'CCTV',pos:'Billing',website:'Website',email:'Email',backup:'Backup',antivirus:'Security',firewall:'Firewall',wifi:'Customer Wi-Fi',fleet:'Fleet GPS',iot:'Machine sensors',tollfree:'Toll-free',ivr:'Call IVR',sms:'SMS',staticip:'Static IP',failover:'Backup line',sdwan:'Central control',leased:'Leased line',leased100:'100 Mbps line',gigabit:'1 Gbps'};
 const KN={micro:'Shop or service',prof:'Office or clinic',multi:'Chain',mfg:'Factory or workshop'};
 function prof(pf){const c=E.CITIES[(pf.city||'').toLowerCase()],g=pf.gst==='active'?'GSTIN active':pf.gst==='inactive'?`GSTIN ${(pf.gstStatus||'inactive').toLowerCase()}`:pf.gst==='none'?'No GSTIN':null;
